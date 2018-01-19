@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY APP</title>
+</head>
+<body>
+<script type="text/javascript">
+    var userPull = ["user1", "user2", "user3", "user4", "user5", "user6"];
+
+    var i = 0;
+
+
+    var getNextUser = function (arr) {
+        if(i === arr.length) {i = 0;}
+        i++;
+        console.log(arr[i-1]);
+        return arr[i-1];
+    };
+
+</script>
+<h1>Do you need new user?</h1>
+<button class = "btn btn-default" onclick="getNextUser(userPull);" style = "background-color: limegreen">YES</button>
+</body>
+</html>
